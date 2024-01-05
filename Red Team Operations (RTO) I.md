@@ -8,9 +8,9 @@ Here's its intended use:
 2. in Settings → Core Plugins, enable Outline, then run "Outline: Show Outline" in the command palette
      - Now you can quickly jump to a particular section by clicking its heading in the outline.
 3. in Settings → Community plugins → Browse, find and install "Copy Inline Code"
-  - Now you can copy any command simply by clicking on the end of it.
+     - Now you can copy any command simply by clicking on the end of it.
 4. enter "reading" view by clicking the book in the top-right (by default)
-  - Now you can see commands for linked sections simply by hovering over them.
+     - Now you can see commands for linked sections simply by hovering over them.
 
 ## Microsoft Defender Antivirus
 `Get-MpThreatDetection | sort $_InitialDetectionTime | select -First 1`
