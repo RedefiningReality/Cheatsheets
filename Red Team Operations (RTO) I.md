@@ -1,5 +1,5 @@
 # Zero-Point Security Red Team Operations (RTO) I
-All the commands from the course, generalized and tweaked to suit my needs, and organized in a logical order
+All the commands from the course, generalized and tweaked to suit my needs, organized in a logical order
 
 ***DO NOT USE THIS DOCUMENT AS IS***
 
