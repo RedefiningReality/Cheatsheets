@@ -2,6 +2,7 @@
 All the commands from the course, generalized and tweaked to suit my needs, and organized in a logical order
 
 ***DO NOT USE THIS DOCUMENT AS IS***
+
 Here's its intended use:
 - open this markdown file in [Obisidan](https://obsidian.md)
 - in Settings → Core Plugins, enable Outline. Then run "Outline: Show Outline" in the command palette
