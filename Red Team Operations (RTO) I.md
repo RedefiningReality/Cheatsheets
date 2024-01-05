@@ -2,8 +2,6 @@
 All the commands from the course, generalized and tweaked to suit my needs, organized in a logical order
 
 ***DO NOT USE THIS DOCUMENT AS IS***
-
-Here's its intended use:
 1. open this markdown file in [Obisidan](https://obsidian.md)
 2. in Settings → Core Plugins, enable Outline, then run "Outline: Show Outline" in the command palette
      - Now you can quickly jump to a particular section by clicking its heading in the outline.
