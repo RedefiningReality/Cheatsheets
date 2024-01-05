@@ -8,4 +8,4 @@ A collection of all my personal cheat sheets and certification exam guides as I 
 - [Zero-Point RTO I](Red%20Team%20Operations%20(RTO)%20I.md)
 ### Exam Guides
 - OSCP: [Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
-- CRTO: Pwning CRTO
+- CRTO: [Your To the Point Guide on Pwning Zero-Point RTO](https://medium.com/@redefiningreality/your-to-the-point-guide-on-pwning-zero-point-rto-303c67b4d621)
