@@ -320,8 +320,8 @@ stage {
 
 post-ex {
 	set amsi_disable "true";
-	set spawnto_x64 "C:\\Windows\\System32\\dllhost.exe";
-	set spawnto_x86 "C:\\Windows\\SysWOW64\\dllhost.exe";
+	set spawnto_x64 "c:\\windows\\sysnative\\dllhost.exe";
+	set spawnto_x86 "c:\\windows\\syswow64\\dllhost.exe";
 }
 ```
 ## Extending Cobalt Strike
