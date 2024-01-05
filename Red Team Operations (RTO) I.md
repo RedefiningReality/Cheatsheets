@@ -5,7 +5,7 @@ All the commands from the course, generalized and tweaked to suit my needs, orga
 
 Here's its intended use:
 - open this markdown file in [Obisidan](https://obsidian.md)
-- in Settings → Core Plugins, enable Outline. Then run "Outline: Show Outline" in the command palette
+- in Settings → Core Plugins, enable Outline. Then run "Outline: Show Outline" in the command palette. Now you can quickly jump to a particular section by clicking its heading in the outline
 - in Settings → Community plugins → Browse, find and install "Copy Inline Code". Now you can copy any command simply by clicking on the end of it
 - enter "reading" view by clicking the book in the top-right (by default). Now you can see commands for linked sections simply by hovering over them
 
