@@ -8,7 +8,7 @@ All the concepts from the course as well as my own research, with commands provi
 3. in Settings → Community plugins → Browse, find and install "Copy Inline Code"
      - Now you can copy any command by clicking on the end of it.
 4. enter "reading" view by clicking the book in the top-right (by default)
-     - Now you can see commands for linked sections by hovering over them.
+     - Now you can see the contents of linked sections by hovering over them.
 ## C2 Infrastructure
 #### Apache Installation
 on redirector,
