@@ -1,5 +1,6 @@
 # Zero-Point Security Red Team Operations (RTO) II
 All the concepts from the course as well as my own research, with commands provided
+
 ***DO NOT USE THIS DOCUMENT AS IS***
 1. download this markdown file, and open it in [Obisidan](https://obsidian.md)
 2. in Settings → Core Plugins, enable Outline, then run "Outline: Show Outline" in the command palette
