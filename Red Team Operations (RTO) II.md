@@ -151,7 +151,7 @@ on attacker (server),
 `sudo socat tcp-listen:5353,reuseaddr,fork udp4-sendto:localhost:53`
 
 on redirector,
-`sudo socat udp4-listen:53,reuseaddr,fork tcp:localhost:5353`
+`sudo socat udp4-listen:53,reuseaddr,fork tcp:localhost:5353,retry,forever`
 
 you can add socat commands to cron with
 `sudo nano /etc/cron.d/redirect`
