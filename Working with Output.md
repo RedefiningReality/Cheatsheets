@@ -93,7 +93,6 @@ Common Use Cases
 [lines]
 EOF
 ```
----
 `… | tee [file]` ⇒ both print to standard output and write to `[file]` (think `>`)
 - `-a` ⇒ append instead of overwriting (think `>>`)
 
