@@ -28,9 +28,11 @@ https://www.cyberciti.biz/faq/grep-regular-expressions/
 
 #### Cutting and Replacing: `cut`, `tr`, and `sed`
 `… | cut -d [delimiter] -f [field]` or `cut -d [delimiter] -f [field] [file]` ⇒ get `[field]` field from each line after cutting it with `[delimiter]`
+
 `… | tr [original] [new]` or `tr [original] [new] [file]` ⇒ replace corresponding character in `[original]` with character in same position in new `[new]`
 - `-d [chars]` ⇒ delete all instances of every character in `[chars]`
 - `-s [chars]` ⇒ (squash) remove repeats for each character in `[chars]`
+
 `… | sed 's/[original]/[new]/g'` or `sed 's/[original]/[new]/g' [file]` ⇒ replace all `[original]` with `[new]` in terminal output
 - `sed -i 's/[original]/[new]/g' [file]` ⇒ replace all `[original]` with `[new]` in `[file]`
 
@@ -44,8 +46,9 @@ Common Use Cases
 `… | sort` or `sort [file]` ⇒ sort lines in alphabetical order
 - `-u` ⇒ remove duplicates (similar to `… | sort | uniq`)
 - `-V` ⇒ sort by version number - great for IPv4 addresses
+
 `… | uniq` ⇒ unique (only display consecutive duplicate lines once)
-- ex. `… | sort | uniq` ⇒ remove ALL (not just consecutive) duplicate lines
+- `… | sort | uniq` ⇒ remove ALL (not just consecutive) duplicate lines
 
 Common Use Cases
 - `cat [ip lists] | sort -uV > ips.txt` ⇒ combine multiple lists of IPv4 addresses
@@ -76,7 +79,7 @@ Common Use Cases
 - `… [stream]>[file]` ⇒ overwrite file
   - `… [stream]>>[file]` ⇒ append to file
 - `… [stream]<[file]` ⇒ read from file
-  - `… [stream]<<[file]` ⇒ 
+  - `… [stream]<<[file]` ⇒ read from file
 - `… [stream1]>&[stream2]` ⇒ redirect one stream to another
 
 Common Use Cases
@@ -85,8 +88,14 @@ Common Use Cases
   - `… 2>&1 >[file]` ⇒ write to file, including errors
 - `… [stream]>/dev/null` ⇒ don't show stream
   - `… 2>/dev/null` ⇒ don't show errors
+- input multiple lines of text to command (aka here document)
+```
+… << EOF
+[lines]
+EOF
+```
 ---
-- `… | tee [file]` ⇒ both print to standard output and write to `[file]` (think `>`)
-  - `-a` ⇒ append instead of overwriting (think `>>`)
+`… | tee [file]` ⇒ both print to standard output and write to `[file]` (think `>`)
+- `-a` ⇒ append instead of overwriting (think `>>`)
 
 https://www.geeksforgeeks.org/input-output-redirection-in-linux/
