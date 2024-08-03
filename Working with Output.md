@@ -122,7 +122,7 @@ Convert to Base64 (to run with `powershell -e [base64]`)
 
  ### Searching: `where`
 `… | Where-Object -Property [prop] -[operator] [value]` or `… | ?/where [prop] -[operator] [value]`  
-[Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators): `-eq`, `-like`, `-match`, `-gt`, `-lt`, ...
+- [Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators): `-eq`, `-like`, `-match`, `-gt`, `-lt`, ...
 
 ### Sorting and Counting: `sort` and `measure`
 `… | Sort-Object -Property [prop]` or `… | sort [prop]` ⇒ sort objects in order by property `[prop]`
