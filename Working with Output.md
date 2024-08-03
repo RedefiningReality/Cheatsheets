@@ -42,7 +42,7 @@ Common Use Cases
   - `netexec [protocol] [targets] -u [user] -p [password] | grep '[+]' | tr -s ' ' | cut -d ' ' -f 2` ⇒ get IP addresses of hosts you have valid creds for
 - `grep 'open/' [nmap scan].gnmap | cut -d ' ' -f 2` ⇒ get IP addresses of live hosts (having at least one port open)
 
-#### Sorting: `sort` and `uniq`
+### Sorting: `sort` and `uniq`
 `… | sort` or `sort [file]` ⇒ sort lines in alphabetical order
 - `-u` ⇒ remove duplicates (similar to `… | sort | uniq`)
 - `-V` ⇒ sort by version number - great for IPv4 addresses
@@ -55,7 +55,7 @@ Common Use Cases
 - `sort -u [hash list] > hashes.txt` ⇒ remove duplicate hashes from hashlist
 - `grep '(' [nmap scan].gnmap | grep -v '()' | cut -d '(' -f 2 | cut -d ')' -f 1 | sort -u > dns.txt` ⇒ retrieve sorted domain names from nmap scan
 
-#### Viewing: `more`/`less`, `tee`, `base64`, and redirection
+### Viewing: `more`/`less`, `tee`, `base64`, and redirection
 - `… | more` or `more [file]` ⇒ scrollable output
 - `… | less` or `less [file]` ⇒ scrollable output in vim-like viewer
   - press `/` then enter pattern to search
@@ -67,15 +67,15 @@ Common Use Cases
 - `set str '[powershell]' ; echo -en $str | iconv -t UTF-16LE | base64 -w 0` ⇒ base64 encode Windows PowerShell command
 - `cat [script].ps1 | iconv -t UTF-16LE | base64 -w 0` ⇒ base64 encode Windows PowerShell script
 
-#### Redirection
-##### Streams
+### Redirection
+#### Streams
 *technically File Descriptors*
 - `0` ⇒ input (stdin)
 - `1` ⇒ output (stdout)
 - `2` ⇒ errors (stderr)
 - not specified ⇒ defaults to `1`
 
-##### Redirection
+#### Redirection
 - `… [stream]>[file]` ⇒ overwrite file
   - `… [stream]>>[file]` ⇒ append to file
 - `… [stream]<[file]` ⇒ read from file
