@@ -3,7 +3,7 @@
 
 ## Linux Terminal
 
-#### Searching: `grep`
+### Searching: `grep`
 `… | grep [contents]` or `grep [contents] [file]` ⇒ only show lines with `[contents]`
 - `-v [contents]` ⇒ only show lines *without* `[contents]`
 - `\|` in `[contents]` is an or
@@ -26,7 +26,7 @@ Common Use Cases
 
 https://www.cyberciti.biz/faq/grep-regular-expressions/
 
-#### Cutting and Replacing: `cut`, `tr`, and `sed`
+### Cutting and Replacing: `cut`, `tr`, and `sed`
 `… | cut -d [delimiter] -f [field]` or `cut -d [delimiter] -f [field] [file]` ⇒ get `[field]` field from each line after cutting it with `[delimiter]`
 
 `… | tr [original] [new]` or `tr [original] [new] [file]` ⇒ replace corresponding character in `[original]` with character in same position in new `[new]`
