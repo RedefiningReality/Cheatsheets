@@ -55,7 +55,7 @@ Common Use Cases
 - `sort -u [hash list] > hashes.txt` ⇒ remove duplicate hashes from hashlist
 - `grep '(' [nmap scan].gnmap | grep -v '()' | cut -d '(' -f 2 | cut -d ')' -f 1 | sort -u > dns.txt` ⇒ retrieve sorted domain names from nmap scan
 
-#### Viewing and Saving to File: `more`/`less`, `tee`, `base64`, and redirection
+#### Viewing: `more`/`less`, `tee`, `base64`, and redirection
 - `… | more` or `more [file]` ⇒ scrollable output
 - `… | less` or `less [file]` ⇒ scrollable output in vim-like viewer
   - press `/` then enter pattern to search
