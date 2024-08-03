@@ -3,7 +3,7 @@
 
 ## Linux Terminal
 
-#### Searching: `grep`
+### Searching: `grep`
 `… | grep [contents]` or `grep [contents] [file]` ⇒ only show lines with `[contents]`
 - `-v [contents]` ⇒ only show lines *without* `[contents]`
 - `\|` in `[contents]` is an or
@@ -15,7 +15,7 @@
 - `-B [num]` ⇒ show `[num]` lines before line
 - `-A [num]` ⇒ show `[num]` lines after line
 
-Common Use Cases
+#### Common Use Cases
 - `grep -Horn [contents] [dir]` ⇒ recursively search `[dir]` for files containing `[contents]`
   - `-Hrn` (without the `o`) ⇒ display text surrounding `[contents]` as well as filename
 - `… | egrep -v '^$' ⇒ remove blank lines
