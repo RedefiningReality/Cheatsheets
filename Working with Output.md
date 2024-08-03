@@ -79,7 +79,6 @@ Common Use Cases
 - `… [stream]>[file]` ⇒ overwrite file
   - `… [stream]>>[file]` ⇒ append to file
 - `… [stream]<[file]` ⇒ read from file
-  - `… [stream]<<[file]` ⇒ read from file
 - `… [stream1]>&[stream2]` ⇒ redirect one stream to another
 
 Common Use Cases
