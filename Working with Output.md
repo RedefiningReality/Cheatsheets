@@ -97,3 +97,61 @@ EOF
 - `-a` ⇒ append instead of overwriting (think `>>`)
 
 https://www.geeksforgeeks.org/input-output-redirection-in-linux/
+
+## Windows PowerShell
+
+### Viewing: `select`, `ft`, and `fl`
+`… | Get-Member` or `… | member` ⇒ see all property names (even ones not displayed by default)
+- `-MemberType [type]` ⇒ properties of a specific type
+---
+`… | Select-Object -Property [prop1],[prop2]` or `… | select [prop1],[prop2]` ⇒ show values for (select) specific properties
+- `-First [num]` ⇒ select the first `[num]` objects
+- `-Skip [num]` ⇒ skip the first `[num]` objects
+- `-Last [num]` ⇒ select the last `[num]` objects
+- `-Unique` ⇒ show duplicate values only once
+
+`… | Format-Table -Property [prop1],[prop2]` or `… | ft [prop1],[prop2]` ⇒ display in table form
+- `-AutoSize` ⇒ automatically size cells to accommodate data
+- `-Wrap` ⇒ wrap text that doesn't fit in a cell
+
+`… | Format-List -Property [prop1],[prop2]` or `… | fl [prop1],[prop2]` ⇒ display in list form
+
+Convert to Base64 (to run with `powershell -e [base64]`)
+- `$str = '[powershell]' ; [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($str))` ⇒ base64 encode Windows PowerShell command
+- `[System.Convert]::ToBase64String((Get-Content -Path [script].ps1 -Encoding byte))` ⇒ base64 encode Windows PowerShell script
+
+ ### Searching: `where`
+`… | Where-Object -Property [prop] -[operator] [value]` or `… | ?/where [prop] -[operator] [value]`  
+[Operators](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comparison_operators): `-eq`, `-like`, `-match`, `-gt`, `-lt`, ...
+
+### Sorting and Counting: `sort` and `measure`
+`… | Sort-Object -Property [prop]` or `… | sort [prop]` ⇒ sort objects in order by property `[prop]`
+- `-Descending` ⇒ reverse order
+- `-Unique` ⇒ remove duplicates
+
+`… | Measure-Object` or `… | measure` ⇒ count the number of objects
+- `-Property [prop]` ⇒ statistics for a property
+
+### Saving: `out-file`, `export-csv`, and `ogv`
+`… | Out-File -FilePath [file]` ⇒ overwrite file (same as `>`)
+- `-Append` ⇒ append to file (same as `>>`)
+
+`… | Export-Csv -Path [file].csv` ⇒ write to csv file (for opening in excel)
+- `-Append` ⇒ append to csv file
+- `-NoTypeInformation` ⇒ don't include first row with property types
+
+`… | Out-GridView` or `… | ogv` ⇒ view in interactive table
+
+### Iterating: `foreach`
+`… | ForEach-Object -Process [what to do on each iteration]` or `… | %/foreach [what to do on each iteration (process)]`
+- `-Begin [before loop]`
+- `-Process [each iteration]`
+- `-End [after loop]`
+
+`… | ForEach-Object -MemberName [prop]` or `… | %/foreach [prop]` ⇒ get values for specific properties
+- same as `select` but doesn't change property type
+
+### Script Block
+Within a PowerShell command, use `{` and `}`. Reference the current item with `$_`
+- `Get-Service | Where-Object { $_.Status -eq "Stopped" }`
+- `Get-Process | ForEach-Object { $_.ProcessName }`
