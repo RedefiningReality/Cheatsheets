@@ -103,7 +103,7 @@ https://www.geeksforgeeks.org/input-output-redirection-in-linux/
 ### Viewing: `select`, `ft`, and `fl`
 `… | Get-Member` or `… | member` ⇒ see all property names (even ones not displayed by default)
 - `-MemberType [type]` ⇒ properties of a specific type
----
+
 `… | Select-Object -Property [prop1],[prop2]` or `… | select [prop1],[prop2]` ⇒ show values for (select) specific properties
 - `-First [num]` ⇒ select the first `[num]` objects
 - `-Skip [num]` ⇒ skip the first `[num]` objects
