@@ -55,7 +55,7 @@ https://www.cyberciti.biz/faq/grep-regular-expressions/
 - `sort -u [hash list] > hashes.txt` ⇒ remove duplicate hashes from hashlist
 - `grep '(' [nmap scan].gnmap | grep -v '()' | cut -d '(' -f 2 | cut -d ')' -f 1 | sort -u > dns.txt` ⇒ retrieve sorted domain names from nmap scan
 
-### Viewing: `more`/`less`, `tee`, `base64`, and redirection
+### Viewing: `more`/`less`, `tee`, and `base64`
 - `… | more` or `more [file]` ⇒ scrollable output
 - `… | less` or `less [file]` ⇒ scrollable output in vim-like viewer
   - press `/` then enter pattern to search
