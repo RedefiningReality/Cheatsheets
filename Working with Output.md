@@ -15,7 +15,7 @@
 - `-B [num]` ⇒ show `[num]` lines before line
 - `-A [num]` ⇒ show `[num]` lines after line
 
-Common Use Cases
+##### Common Use Cases
 - `grep -Horn [contents] [dir]` ⇒ recursively search `[dir]` for files containing `[contents]`
   - `-Hrn` (without the `o`) ⇒ display text surrounding `[contents]` as well as filename
 - `… | egrep -v '^$'` ⇒ remove blank lines
@@ -36,7 +36,7 @@ https://www.cyberciti.biz/faq/grep-regular-expressions/
 `… | sed 's/[original]/[new]/g'` or `sed 's/[original]/[new]/g' [file]` ⇒ replace all `[original]` with `[new]` in terminal output
 - `sed -i 's/[original]/[new]/g' [file]` ⇒ replace all `[original]` with `[new]` in `[file]`
 
-Common Use Cases
+##### Common Use Cases
 - `… | tr [a-z] [A-Z]` ⇒ make text uppercase
 - `… | tr -s ' ' | cut -d ' ' -f [field]` ⇒ get `[field]` but account for contiguous spaces
   - `netexec [protocol] [targets] -u [user] -p [password] | grep '[+]' | tr -s ' ' | cut -d ' ' -f 2` ⇒ get IP addresses of hosts you have valid creds for
@@ -50,7 +50,7 @@ Common Use Cases
 `… | uniq` ⇒ unique (only display consecutive duplicate lines once)
 - `… | sort | uniq` ⇒ remove ALL (not just consecutive) duplicate lines
 
-Common Use Cases
+##### Common Use Cases
 - `cat [ip lists] | sort -uV > ips.txt` ⇒ combine multiple lists of IPv4 addresses
 - `sort -u [hash list] > hashes.txt` ⇒ remove duplicate hashes from hashlist
 - `grep '(' [nmap scan].gnmap | grep -v '()' | cut -d '(' -f 2 | cut -d ')' -f 1 | sort -u > dns.txt` ⇒ retrieve sorted domain names from nmap scan
@@ -63,7 +63,7 @@ Common Use Cases
   - `-d` ⇒ base64 decode instead
   - `-i` ⇒ ignore non-alphabet characters
 
-Common Use Cases
+##### Common Use Cases
 - `set str '[powershell]' ; echo -en $str | iconv -t UTF-16LE | base64 -w 0` ⇒ base64 encode Windows PowerShell command
 - `cat [script].ps1 | iconv -t UTF-16LE | base64 -w 0` ⇒ base64 encode Windows PowerShell script
 
@@ -81,7 +81,7 @@ Common Use Cases
 - `… [stream]<[file]` ⇒ read from file
 - `… [stream1]>&[stream2]` ⇒ redirect one stream to another
 
-Common Use Cases
+##### Common Use Cases
 - `… >[file]` ⇒ write output to file
 - `… 2>&1` ⇒ treat errors as output
   - `… 2>&1 >[file]` ⇒ write to file, including errors
