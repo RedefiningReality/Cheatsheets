@@ -6,7 +6,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 #### General
 - [Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
-- [Working with Terminal Output](Working%20with%20Terminal%20Output.md) (Linux terminal and Windows PowerShell)
+- [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
 #### Penetration Testing
 - [Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
 - checklist and cheat sheets to be released
