@@ -1,5 +1,5 @@
 # Printing Tricks
-*aka Useful Commands for Working with a terminal*
+*aka Useful Commands for Working with a Terminal*
 
 ## Linux Terminal
 
