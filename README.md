@@ -4,7 +4,7 @@ A collection of all my personal cheat sheets and certification exam guides as I 
 Also check out my [ohmykali terminal plugin](https://github.com/RedefiningReality/ohmykali) for Kali Linux.
 
 ### Cheat Sheets
-#### General Operating System
+#### General
 - [Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
 - [Working with Terminal Output](Working%20with%20Terminal%20Output.md) (Linux terminal and Windows PowerShell)
