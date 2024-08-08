@@ -109,7 +109,7 @@ https://www.geeksforgeeks.org/input-output-redirection-in-linux/
 - `-Skip [num]` ⇒ skip the first `[num]` objects
 - `-Last [num]` ⇒ select the last `[num]` objects
 - `-Unique` ⇒ show duplicate values only once
-- `-ExpandProperty [prop]` instead of `-Property` ⇒ returns items directly in an array
+- `-ExpandProperty [prop]` instead of `-Property` ⇒ return items directly in an array
 
 `… | Format-Table -Property [prop1],[prop2]` or `… | ft [prop1],[prop2]` ⇒ display in table form
 - `-AutoSize` ⇒ automatically size cells to accommodate data
