@@ -51,11 +51,11 @@ https://www.cyberciti.biz/faq/grep-regular-expressions/
 - `… | sort | uniq` ⇒ remove ALL (not just consecutive) duplicate lines
 
 ##### Common Use Cases
-- `cat [ip lists] | sort -uV > ips.txt` ⇒ combine multiple lists of IPv4 addresses
+- `sort -uV [ip lists] > ips.txt` ⇒ combine multiple lists of IPv4 addresses
 - `sort -u [hash list] > hashes.txt` ⇒ remove duplicate hashes from hashlist
 - `grep '(' [nmap scan].gnmap | grep -v '()' | cut -d '(' -f 2 | cut -d ')' -f 1 | sort -u > dns.txt` ⇒ retrieve sorted domain names from nmap scan
 
-### Viewing: `more`/`less`, `tee`, and `base64`
+### Viewing: `more`/`less` and `base64`
 - `… | more` or `more [file]` ⇒ scrollable output
 - `… | less` or `less [file]` ⇒ scrollable output in vim-like viewer
   - press `/` then enter pattern to search
