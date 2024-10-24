@@ -17,7 +17,7 @@ shuf -n <num> live.txt | sort -uV > targets.txt
 ```
 ### Service Scan
 ```sh
-sudo nmap -n -Pn --min-hostgroup 128 --max-retries 0 -p- -sV -O -iL ranges.txt -oA tcp-full
+sudo nmap -n -Pn --min-hostgroup 128 --max-retries 0 -p- -sV -O -iL targets.txt -oA tcp-full
 ```
 
 ```sh
