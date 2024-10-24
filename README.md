@@ -8,8 +8,9 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
 - [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
 #### Penetration Testing
+- [Services Testing](Services%20Testing.md)
 - [Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
-- checklist and cheat sheets to be released
+- more cheat sheets to be released
 #### Red Teaming
 - [Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
 - [Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
