@@ -162,7 +162,7 @@ sed 's/$/ (tcp/21)/' ftp.txt
 - default/weak password
 #### PostgreSQL (5432)
 - default/weak password
-#### Redis (6379)\
+#### Redis (6379)
 - default/weak password
 ### Other
 #### SMTP (25/587)
