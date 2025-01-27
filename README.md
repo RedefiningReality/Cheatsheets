@@ -4,6 +4,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 
 ### Cheat Sheets
 #### General
+- [Intro to Cybersecurity PowerPoint](https://docs.google.com/presentation/d/1MITxEHjWHYbJX7xSxgpbQQ88uRbacB5pDVnJqqWqobw/)
 - [Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
 - [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
