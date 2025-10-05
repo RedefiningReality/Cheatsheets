@@ -24,7 +24,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 
 NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
-- [NTLM Relay Table]() - how to get creds and relay creds
+- [NTLM Relay Table](NTLM%20-%20Authenticate.pdf) - how to get creds and relay creds
 - [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints, target services, and next steps
 
 Kerberos Attacks
@@ -33,7 +33,7 @@ Kerberos Attacks
 - [Kerberos Attacks (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/kerberos/)
 - [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/)
 
-- [Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
+[Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
 #### Red Teaming
 - [Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
 - [Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
