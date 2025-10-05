@@ -9,7 +9,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
 - [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
-### Penetration Testing
+### Network Penetration Testing
 #### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
 - [Services Testing](Services%20Testing.md) - pen test ready copy-and-pasteables
@@ -18,13 +18,13 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Linux Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 - [Windows Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/windows-hardening/checklist-windows-privilege-escalation.html)
 
-### Active Directory
+#### Active Directory
 [The Hacker Recipes](https://www.thehacker.recipes)
-#### NTLM Attacks
+##### NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
 - [NTLM Relay Table](NTLM%20-%20Authenticate.pdf) - how to get and relay a challenge response
 - [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints, target services, and next steps
-#### Kerberos Attacks
+##### Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
 - John will add his video on delegation here
 - [Kerberos Attacks (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/kerberos/)
@@ -51,9 +51,17 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
   - [BOF Development](https://www.zeropointsecurity.co.uk/course/bof-dev)
 - [Maldev Academy](https://maldevacademy.com/maldev-course)
 - [SEKTOR7 Institute](https://institute.sektor7.net/consumer)
+#### Application Penetration Testing
+- [Pwn College → Core Material](https://pwn.college/dojos)
+- [Exploit Education](https://exploit.education)
+#### Cloud Penetration Testing
+- [Pwned Labs](https://pwnedlabs.io)
+- [Antisyphon Breaching the Cloud](https://www.antisyphontraining.com/product/breaching-the-cloud-with-beau-bullock/)
+- [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)
 ### Watching
-- [IppSec](https://ippsec.rocks) - search any topic!
-- [xct](https://www.youtube.com/@xct_de)
+- [IppSec](https://ippsec.rocks) - pwning boxes, search any topic!
+- [xct](https://www.youtube.com/@xct_de) - VulnLab walkthroughs
+- [Tyler Ramsbey](https://www.youtube.com/@TylerRamsbey/playlists) - cloud playlists and more
 ### Practice
 #### Cloud Platforms
 - [VulnLab](https://www.vulnlab.com)
