@@ -58,7 +58,7 @@ These are the resources I use, like, and recommend to others.
 ### Practice
 - [VulnLab](https://www.vulnlab.com)
 - [HackTheBox Labs](https://app.hackthebox.com)
-- Proving Grounds [Play and Practice](https://www.offsec.com/products/proving-grounds/)
+- [Proving Grounds Play and Practice](https://www.offsec.com/products/proving-grounds/)
 ## Exam Guides
 - OSCP: [Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
 - CRTO: [Your To the Point Guide on Pwning Zero-Point RTO](https://medium.com/@redefiningreality/your-to-the-point-guide-on-pwning-zero-point-rto-303c67b4d621)
