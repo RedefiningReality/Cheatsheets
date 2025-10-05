@@ -10,7 +10,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
 - [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
 ### Penetration Testing
-#### Services
+#### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
 - [Services Testing](Services%20Testing.md) - pen test ready copy-and-pasteables
 - [HackTricks → Network Servces Pentesting](https://book.hacktricks.wiki/en/index.html) - most comprehensive by far, sometimes messy
