@@ -38,8 +38,8 @@ Kerberos Attacks
 - [Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
 - [Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
 - [Defence Evasion PowerPoint](https://docs.google.com/presentation/d/1FATzBCzp1nPhXFKdcj9M96Pl1fUjoxNGep6sQr6c-As/)
-### Learning Resources
-These are the learning resources I used, liked, and recommend to others.
+### Resources
+These are the resources I use, like, and recommend to others.
 #### Learning
 **Network Penetration Testing**
 - [TCM Security Academy PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course)
