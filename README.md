@@ -55,9 +55,13 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [IppSec](https://ippsec.rocks) - search any topic!
 - [xct](https://www.youtube.com/@xct_de)
 ### Practice
+#### Cloud Platforms
 - [VulnLab](https://www.vulnlab.com)
 - [HackTheBox Labs](https://app.hackthebox.com)
 - [Proving Grounds Play and Practice](https://www.offsec.com/products/proving-grounds/)
+#### Self-Hosted
+- [Cyber Range Network Diagram]()
+- [Attacker VM Setup](https://github.com/CyberHawks-IIT/AttackerVMs)
 ## Exam Guides
 - OSCP: [Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
 - CRTO: [Your To the Point Guide on Pwning Zero-Point RTO](https://medium.com/@redefiningreality/your-to-the-point-guide-on-pwning-zero-point-rto-303c67b4d621)
