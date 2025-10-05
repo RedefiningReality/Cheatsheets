@@ -22,7 +22,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 [The Hacker Recipes](https://www.thehacker.recipes)
 #### NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
-- [NTLM Relay Table](NTLM%20-%20Authenticate.pdf) - how to get creds and relay creds
+- [NTLM Relay Table](NTLM%20-%20Authenticate.pdf) - how to get and relay a challenge response
 - [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints, target services, and next steps
 #### Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
