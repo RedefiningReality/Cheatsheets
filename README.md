@@ -9,7 +9,10 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
 - [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
 - [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
+
 ### Network Penetration Testing
+[Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
+
 #### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
 - [Services Testing](Services%20Testing.md) - pen test ready copy-and-pasteables
@@ -30,12 +33,11 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Kerberos Attacks (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/kerberos/)
 ##### Misc
 - [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/)
-
-[Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
 ### Red Teaming
 - [Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
 - [Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
 - [Defence Evasion PowerPoint](https://docs.google.com/presentation/d/1FATzBCzp1nPhXFKdcj9M96Pl1fUjoxNGep6sQr6c-As/)
+
 ## Resources
 ### Learning
 #### Network Penetration Testing
@@ -59,10 +61,12 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Pwned Labs](https://pwnedlabs.io)
 - [Antisyphon Breaching the Cloud](https://www.antisyphontraining.com/product/breaching-the-cloud-with-beau-bullock/)
 - [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)
+
 ### Watching
 - [IppSec](https://ippsec.rocks) - pwning boxes, search any topic!
 - [xct](https://www.youtube.com/@xct_de) - VulnLab walkthroughs
 - [Tyler Ramsbey](https://www.youtube.com/@TylerRamsbey/playlists) - cloud playlists and more
+
 ### Practice
 #### Cloud Platforms
 - [VulnLab](https://www.vulnlab.com)
@@ -71,6 +75,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 #### Self-Hosted
 - [Cyber Range Network Diagram](Cyber%20Range%20Network%20Diagram.png)
 - [Attacker VM Setup](https://github.com/CyberHawks-IIT/AttackerVMs)
+
 ## Exam Guides
 - OSCP: [Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
 - CRTO: [Your To the Point Guide on Pwning Zero-Point RTO](https://medium.com/@redefiningreality/your-to-the-point-guide-on-pwning-zero-point-rto-303c67b4d621)
