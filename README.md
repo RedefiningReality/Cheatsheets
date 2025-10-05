@@ -19,12 +19,14 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Linux Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 - [Windows Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/windows-hardening/checklist-windows-privilege-escalation.html)
 
-**Active Directory**
+**Active Directory**  
 [The Hacker Recipes](https://www.thehacker.recipes)
+
 NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
 - [NTLM Relay Table]() - how to get creds and relay creds
 - [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints, target services, and next steps
+
 Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
 - John will add his video on delegation here
