@@ -12,7 +12,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 ### Penetration Testing
 #### Services
 - [Services Enumeraton](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
-- [Services Testing](Services%20Testing.md) - pen test-ready copy-and-pasteables
+- [Services Testing](Services%20Testing.md) - pen test ready copy-and-pasteables
 - [HackTricks → Network Servces Pentesting](https://book.hacktricks.wiki/en/index.html) - most comprehensive by far, sometimes messy
 #### Host Privilege Escalation
 - [Linux Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
