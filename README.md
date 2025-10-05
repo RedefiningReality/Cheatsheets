@@ -28,6 +28,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
 - John will add his video on delegation here
 - [Kerberos Attacks (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/kerberos/)
+
 - [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/)
 
 [Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
