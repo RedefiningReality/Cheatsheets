@@ -45,9 +45,11 @@ These are the resources I use, like, and recommend to others.
 - [TCM Security Academy PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course)
 - [HackTheBox Academy](https://academy.hackthebox.com/catalogue) - guided, hands-on
 - [TryHackMe Offensive Pentesting](https://tryhackme.com/path/outline/pentesting) - throws you in the deep end, hands-on
+
 **Web App Penetration Testing**
 - [Taggart Institute PWST](https://taggartinstitute.org/courses/enrolled/2116543)
 - [PortSwigger Academy](https://portswigger.net/web-security)
+
 **Red Teaming**
 - Zero-Point Security
   - [RTO I](https://www.zeropointsecurity.co.uk/course/red-team-ops)
