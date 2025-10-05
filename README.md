@@ -41,11 +41,11 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 ## Resources
 ### Learning
 #### Network Penetration Testing
-- [TCM Security Academy PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) - videos
+- [TCM Security Academy PEH](https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course) - videos, introductory
 - [HackTheBox Academy](https://academy.hackthebox.com/catalogue) - guided, hands-on
 - [TryHackMe Offensive Pentesting](https://tryhackme.com/path/outline/pentesting) - throws you in the deep end, hands-on
 #### Web App Penetration Testing
-- [Taggart Institute PWST](https://taggartinstitute.org/courses/enrolled/2116543) - videos, good intro
+- [Taggart Institute PWST](https://taggartinstitute.org/courses/enrolled/2116543) - videos, introductory
 - [PortSwigger Academy](https://portswigger.net/web-security) - comprehensive, hands-on
 #### Red Teaming
 - Zero-Point Security
