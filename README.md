@@ -60,7 +60,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [HackTheBox Labs](https://app.hackthebox.com)
 - [Proving Grounds Play and Practice](https://www.offsec.com/products/proving-grounds/)
 #### Self-Hosted
-- [Cyber Range Network Diagram]()
+- [Cyber Range Network Diagram](Cyber%20Range%20Network%20Diagram.png)
 - [Attacker VM Setup](https://github.com/CyberHawks-IIT/AttackerVMs)
 ## Exam Guides
 - OSCP: [Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
