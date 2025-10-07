@@ -23,6 +23,8 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 
 #### Active Directory
 [The Hacker Recipes](https://www.thehacker.recipes)
+
+- [Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
 ##### NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
 - [NTLM Relay Table](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/) - how to get and relay a challenge response
