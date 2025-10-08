@@ -171,7 +171,7 @@ Get-ADGroupMember
 A good general structure is `[initial cmdlet] | where [filter] | [format output]`
 #### Initial Commandlet
 - include `-Server [dc.domain.com]` if running from a machine that is not domain joined
-- select a specific item with `[item]`, filter with `-Filter { <basic filter> }`, or include all items with `-Filter *` then pipe results into a more complex `where` filter
+- select a specific item with `[item]`, filter with `-Filter { [basic filter] }`, or include all items with `-Filter *` then pipe results into a more complex `where` filter
 - include `-Properties [prop1],[prop2]` to pull a specific property that you can later reference with `where` or `select`
 #### Filter
 - for a single filter, see [Searching: where](#searching-where) above
