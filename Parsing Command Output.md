@@ -175,7 +175,7 @@ A good general structure is `[initial cmdlet] | where [filter] | [format output]
 - include `-Properties [prop1],[prop2]` to pull a specific property that you can later reference with `where` or `select`
 #### Filter
 - for a single filter, see Searching: where above
-- for multiple filters, `where { ([filter1]) -[and/or] ([filter2]) }
+- for multiple filters, `where { ([filter1]) -[and/or] ([filter2]) }`
 #### Format Output
 Choose between the following:
 - display the properties you want in a list: `fl [prop1],[prop2]`
