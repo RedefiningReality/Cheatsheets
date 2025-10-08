@@ -1,7 +1,7 @@
 # Security Cheat Sheets and Guides
 Originally a collection of all my personal cheat sheets and certification exam guides as I progress through my career in offensive security.
 Now expanded to include all the resources I regularly consult and recommend.  
-* → resources I created (unique to this repo)
+\* → resources I created (unique to this repo)
 
 Also check out my [ohmykali terminal plugin](https://github.com/RedefiningReality/ohmykali) for Kali Linux.
 
