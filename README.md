@@ -12,6 +12,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 
 ### Network Penetration Testing
 [Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
+[AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
 
 #### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
