@@ -11,8 +11,8 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
 
 ### Network Penetration Testing
-[Red Team Manual](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
-[AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
+- [Red Team Manual (Old)](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
+- [AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
 
 #### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
