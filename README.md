@@ -12,7 +12,6 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 
 ### Network Penetration Testing
 - [Red Team Manual (Old)](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
-- [AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
 
 #### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
@@ -21,15 +20,14 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 #### Host Privilege Escalation
 - [Linux Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 - [Windows Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/windows-hardening/checklist-windows-privilege-escalation.html)
-
+#### Host Credential Access
+- [AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
+- [Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
 #### Active Directory
 [The Hacker Recipes](https://www.thehacker.recipes)
-
-- [Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
 ##### NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
-- [NTLM Relay Table](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/) - how to get and relay a challenge response, cross-protocol relay constraints, and attacks to try
-- [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints and next steps
+- [NTLM Relay](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/)
 ##### Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
 - John will add his video on delegation here
