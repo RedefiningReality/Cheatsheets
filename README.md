@@ -1,33 +1,35 @@
 # Security Cheat Sheets and Guides
 Originally a collection of all my personal cheat sheets and certification exam guides as I progress through my career in offensive security.
 Now expanded to include all the resources I regularly consult and recommend.  
+* → resources I created (unique to this repo)
+
 Also check out my [ohmykali terminal plugin](https://github.com/RedefiningReality/ohmykali) for Kali Linux.
 
 ## Cheat Sheets
 ### General
-- [Intro to Cybersecurity PowerPoint](https://docs.google.com/presentation/d/1MITxEHjWHYbJX7xSxgpbQQ88uRbacB5pDVnJqqWqobw/)
-- [Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
-- [Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
-- [Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
+- *[Intro to Cybersecurity PowerPoint](https://docs.google.com/presentation/d/1MITxEHjWHYbJX7xSxgpbQQ88uRbacB5pDVnJqqWqobw/)
+- *[Windows Commands Cheat Sheet](https://docs.google.com/document/d/1CGgADAOZQuMXAyzXVeXRNhQ_PPBYliMXCy-4RNE0UMw/)
+- *[Linux Commands Cheat Sheet](https://docs.google.com/document/d/1vJxoHrjW607NJDLC1Zln1llrEIqrS6Ea3j9ihJTdblg/)
+- *[Parsing Command Output](Parsing%20Command%20Output.md) (Linux terminal and Windows PowerShell)
 
 ### Network Penetration Testing
-- [Red Team Manual (Old)](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
+- *[Red Team Manual (Old)](https://docs.google.com/document/d/17W30A0wpB7lVTDb7SCjWs0lb9bMAjVR4B7Dp_c2rU2g/)
 
 #### Services Attacks
 - [Services Enumeraton (by Mohamed Trigui)](https://medtrigui.github.io/service-enumeration/) - common services, commands, vulnerabilites
-- [Services Testing](Services%20Testing.md) - pen test ready copy-and-pasteables
+- *[Services Testing](Services%20Testing.md) - pen test ready copy-and-pasteables
 - [HackTricks → Network Servces Pentesting](https://book.hacktricks.wiki/en/index.html) - most comprehensive by far, sometimes messy
 #### Host Privilege Escalation
 - [Linux Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/linux-hardening/linux-privilege-escalation-checklist.html)
 - [Windows Privilege Escalation (HackTricks)](https://book.hacktricks.wiki/en/windows-hardening/checklist-windows-privilege-escalation.html)
 #### Host Credential Access
-- [AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
-- [Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
+- *[AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
+- *[Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
 #### Active Directory
 [The Hacker Recipes](https://www.thehacker.recipes)
 ##### NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
-- [NTLM Relay](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/)
+- *[NTLM Relay](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/)
 ##### Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
 - John will add his video on delegation here
@@ -35,9 +37,9 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 ##### Misc
 - [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/)
 ### Red Teaming
-- [Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
-- [Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
-- [Defence Evasion PowerPoint](https://docs.google.com/presentation/d/1FATzBCzp1nPhXFKdcj9M96Pl1fUjoxNGep6sQr6c-As/)
+- *[Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
+- *[Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
+- *[Defence Evasion PowerPoint](https://docs.google.com/presentation/d/1FATzBCzp1nPhXFKdcj9M96Pl1fUjoxNGep6sQr6c-As/)
 
 ## Resources
 ### Learning
@@ -74,10 +76,10 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [HackTheBox Labs](https://app.hackthebox.com)
 - [Proving Grounds Play and Practice](https://www.offsec.com/products/proving-grounds/)
 #### Self-Hosted
-- [Cyber Range Network Diagram](Cyber%20Range%20Network%20Diagram.png)
-- [Attacker VM Setup](https://github.com/CyberHawks-IIT/AttackerVMs)
+- *[Cyber Range Network Diagram](Cyber%20Range%20Network%20Diagram.png)
+- *[Attacker VM Setup](https://github.com/CyberHawks-IIT/AttackerVMs)
 
 ## Exam Guides
-- OSCP: [Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
-- CRTO: [Your To the Point Guide on Pwning Zero-Point RTO](https://medium.com/@redefiningreality/your-to-the-point-guide-on-pwning-zero-point-rto-303c67b4d621)
-- CRTL: check out my [Cobalt Strike repo](https://github.com/RedefiningReality/Cobalt-Strike)
+- OSCP: *[Your BS-less Guide to Acing OSCP](https://medium.com/@redefiningreality/your-bs-less-guide-to-acing-oscp-4eccaf497410)
+- CRTO: *[Your To the Point Guide on Pwning Zero-Point RTO](https://medium.com/@redefiningreality/your-to-the-point-guide-on-pwning-zero-point-rto-303c67b4d621)
+- CRTL: *check out my [Cobalt Strike repo](https://github.com/RedefiningReality/Cobalt-Strike)
