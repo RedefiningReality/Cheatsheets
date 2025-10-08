@@ -174,7 +174,7 @@ A good general structure is `[initial cmdlet] | where [filter] | [format output]
 - select a specific item with `[item]`, filter with `-Filter { <basic filter> }`, or include all items with `-Filter *` then pipe results into a more complex `where` filter
 - include `-Properties [prop1],[prop2]` to pull a specific property that you can later reference with `where` or `select`
 #### Filter
-- for a single filter, see Searching: where above
+- for a single filter, see [Searching: where](#searching-where) above
 - for multiple filters, `where { ([filter1]) -[and/or] ([filter2]) }`
 #### Format Output
 Choose between the following:
