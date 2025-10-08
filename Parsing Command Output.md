@@ -156,3 +156,33 @@ Convert to Base64 (to run with `powershell -e [base64]`)
 Within a PowerShell command, use `{` and `}`. Reference the current item with `$_`
 - `Get-Service | Where-Object { $_.Status -eq "Stopped" }`
 - `Get-Process | ForEach-Object { $_.ProcessName }`
+
+## AD PowerShell Module Tips & Tricks
+Commandlets you should know:
+```powershell
+Get-ADDomain
+Get-ADObject
+Get-ADUser
+Get-ADComputer
+Get-ADGroup
+Get-ADGroupMember
+```
+### Command Structure
+A good general structure is `[initial cmdlet] | where [filter] | [format output]`
+#### Initial Commandlet
+- include `-Server [dc.domain.com]` if running from a machine that is not domain joined
+- select a specific item with `[item]`, filter with `-Filter { <basic filter> }`, or include all items with `-Filter *` then pipe results into a more complex `where` filter
+- include `-Properties [prop1],[prop2]` to pull a specific property that you can later reference with `where` or `select`
+#### Filter
+- for a single filter, see Searching: where above
+- for multiple filters, `where { ([filter1]) -[and/or] ([filter2]) }
+#### Format Output
+Choose between the following:
+- display the properties you want in a list: `fl [prop1],[prop2]`
+- display the properties you want in a table: `ft [prop1],[prop2] -Wrap`
+- save the properties you want to a CSV file: `select [prop1],[prop2] | Export-Csv -NoTypeInformation [path].csv`
+### Example
+Get unconstrained delegation users
+```powershell
+Get-ADUser -Server $dc -Filter {TrustedForDelegation -eq $true} -Property TrustedForDelegation | ft SamAccountName,TrustedForDelegation -Wrap
+```
