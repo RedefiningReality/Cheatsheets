@@ -27,8 +27,8 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
 ##### NTLM Attacks
 - [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
-- [NTLM Relay Table](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/) - how to get and relay a challenge response
-- [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints, target services, and next steps
+- [NTLM Relay Table](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/) - how to get and relay a challenge response, cross-protocol relay constraints, and attacks to try
+- [NTLM Relay Flowcharts (Hacker Recipes)](https://www.thehacker.recipes/assets/NTLM%20relay.C4GvGhyz.png) - cross-protocol relay constraints and next steps
 ##### Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
 - John will add his video on delegation here
