@@ -1,4 +1,4 @@
-# Security Cheat Sheets and Guides
+# Security Cheat Sheets, Resources, and Guides
 Originally a collection of all my personal cheat sheets and certification exam guides as I progress through my career in offensive security.
 Now expanded to include all the resources I regularly consult and recommend.  
 \* → resources I created (unique to this repo)
