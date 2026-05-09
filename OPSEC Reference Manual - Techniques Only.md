@@ -192,7 +192,7 @@ See [S1.2 Volume Shadow Copy](#s12-volume-shadow-copy) and [S1.3 Direct Volume A
 
 ## D2. Remote
 
-1. **D1** DCSync: MS-DRSR `DRSGetNCChanges`
+1. DCSync: MS-DRSR `DRSGetNCChanges`
 
 ---
 
