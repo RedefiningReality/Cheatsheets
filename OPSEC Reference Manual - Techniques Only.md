@@ -186,11 +186,11 @@
 
 # Credential Dumping: NTDS.dit
 
-## D0. Local
+## D1. Local
 
 See [S1.2 Volume Shadow Copy](#s12-volume-shadow-copy) and [S1.3 Direct Volume Access](#s13-direct-volume-access)
 
-## D1. Remote
+## D2. Remote
 
 1. **D1** DCSync: MS-DRSR `DRSGetNCChanges`
 
