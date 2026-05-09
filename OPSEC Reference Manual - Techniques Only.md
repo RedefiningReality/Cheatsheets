@@ -46,7 +46,7 @@
 
 1. **P4.1** `CreateNamedPipe`, `ConnectNamedPipe`, `ImpersonateNamedPipeClient`
 
-## P5. Registry Autoruns Targeting SYSTEM Contexts
+## P5. Registry Autoruns
 
 1. **P5.1** Set `HKLM\...\Image File Execution Options\<exe>\Debugger` (trigger: invocation of `<exe>`, e.g. `sethc.exe` from login screen)
 2. **P5.2** Set `HKLM\...\Winlogon\Userinit` or `Shell` (trigger: user logon)
