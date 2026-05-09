@@ -37,6 +37,10 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 ##### Misc
 - [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/)
 ### Red Teaming
+#### OPSEC Reference Manual
+- *[Techniques Only](OPSEC%20Reference%20Manual%20-%20Techniques%20Only.md)
+- *[Techniques and Tools](OPSEC%20Reference%20Manual%20-%20Techniques%20%26%20Tools.md)
+#### Notes
 - *[Zero-Point RTO I (Cobalt Strike)](Red%20Team%20Operations%20(RTO)%20I.md)
 - *[Zero-Point RTO II (C2 Infrastructure & Defence Evasion)](Red%20Team%20Operations%20(RTO)%20II.md)
 - *[Defence Evasion PowerPoint](https://docs.google.com/presentation/d/1FATzBCzp1nPhXFKdcj9M96Pl1fUjoxNGep6sQr6c-As/)
