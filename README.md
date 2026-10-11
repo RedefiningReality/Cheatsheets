@@ -37,7 +37,7 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - [Kerberos Authentication (Explanation)](https://www.tarlogic.com/blog/how-kerberos-works/)
 - [Kerberos Attacks (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/kerberos/)
 ##### Misc
-- [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/)
+- [ACL Abuse Flowchart (Hacker Recipes)](https://www.thehacker.recipes/ad/movement/dacl/#abuse)
 ### Red Teaming
 #### OPSEC Reference Manual
 - *[Techniques Only](OPSEC%20Reference%20Manual%20-%20Techniques%20Only.md)
