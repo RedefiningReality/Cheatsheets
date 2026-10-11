@@ -26,9 +26,11 @@ Also check out my [ohmykali terminal plugin](https://github.com/RedefiningRealit
 - *[AMSI Evasion for Pen Testing](https://medium.com/@redefiningreality/an-investigation-of-amsi-evasion-5ccacb217e06)
 - *[Credential Access & Lateral Movement](https://docs.google.com/document/d/1zD0Eo6J4YPnfUc1BKICQ-TujiD3wAbnLts4jpPcwpKo/)
 #### Active Directory
+*[Intro to AD for Pen Testers (video)](https://youtu.be/avZlnxNRNvU)
 [The Hacker Recipes](https://www.thehacker.recipes)
 ##### NTLM Attacks
-- [NTLM Authentication](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
+- *[NTLM Authentication (Visual)](https://claude.ai/artifact/ReCAaXdYgvNNjav64mkLPQ)
+- [NTLM Authentication (Explanation)](https://thievi.sh/blog/ntlm-fully-explained-for-security-professionals/)
 - *[NTLM Relay](https://docs.google.com/document/d/17St0tqsi3cKse0eymsz-nOHw8wVAlYJ8sZg21ZDWjJ0/)
 ##### Kerberos Attacks
 - [Kerberos Authentication](https://www.tarlogic.com/blog/how-kerberos-works/)
